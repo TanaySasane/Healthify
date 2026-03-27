@@ -12,7 +12,7 @@ const Header = () => {
   const navigate = useNavigate()
 
   return (
-    <div className='relative overflow-hidden bg-gradient-to-br from-primary via-indigo-500 to-purple-600 rounded-2xl mx-4 mt-4'>
+    <div className='relative overflow-hidden bg-gradient-to-br from-primary via-indigo-500 to-purple-600 rounded-2xl mt-4'>
       {/* Background blobs */}
       <div className='absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl'/>
       <div className='absolute bottom-0 left-0 w-64 h-64 bg-purple-400/20 rounded-full translate-y-1/2 -translate-x-1/2 blur-2xl'/>
@@ -70,7 +70,7 @@ const Header = () => {
         <div className='md:w-1/2 flex justify-center md:justify-end relative'>
           <div className='relative'>
             <img className='w-full max-w-sm md:max-w-md lg:max-w-lg md:absolute md:bottom-0 md:right-0 drop-shadow-2xl' src={assets.header_img} alt="Doctor"/>
-            {/* Floating card */}
+    {/* Floating card - Confirmed */}
             <div className='hidden md:flex absolute top-16 -left-8 bg-white rounded-2xl shadow-xl p-4 items-center gap-3 w-52'>
               <div className='w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0'>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#22c55e" strokeWidth="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>

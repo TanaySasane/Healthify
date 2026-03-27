@@ -12,7 +12,7 @@ const Banner = () => {
   const navigate = useNavigate()
 
   return (
-    <div className='relative overflow-hidden bg-gradient-to-br from-primary via-indigo-500 to-purple-600 rounded-2xl mx-4 my-20'>
+    <div className='relative overflow-hidden bg-gradient-to-br from-primary via-indigo-500 to-purple-600 rounded-2xl my-20'>
       {/* Blobs */}
       <div className='absolute top-0 left-0 w-72 h-72 bg-white/10 rounded-full -translate-y-1/2 -translate-x-1/2 blur-3xl'/>
       <div className='absolute bottom-0 right-0 w-96 h-96 bg-purple-400/20 rounded-full translate-y-1/2 translate-x-1/2 blur-3xl'/>

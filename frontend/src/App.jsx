@@ -17,21 +17,23 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
   return (
-    <div className='mx-4 sm:mx-[10%]'>
+    <div>
       <ToastContainer />
-      <Navbar />
+      <div className='mx-4 sm:mx-[10%]'>
+        <Navbar />
+      </div>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/doctors' element={<Doctors />} />
-        <Route path='/doctors/:speciality' element={<Doctors />} />
+        <Route path='/doctors' element={<div className='mx-4 sm:mx-[10%]'><Doctors /></div>} />
+        <Route path='/doctors/:speciality' element={<div className='mx-4 sm:mx-[10%]'><Doctors /></div>} />
         <Route path='/login' element={<Login />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/my-profile' element={<MyProfile />} />
-        <Route path='/my-appointments' element={<MyAppointment />} />
-        <Route path='/appointment/:docId' element={<Appointment />} />
-        <Route path='/privacy-policy' element={<PrivacyPolicy />} />
-        <Route path='/terms' element={<Terms />} />
+        <Route path='/about' element={<div className='mx-4 sm:mx-[10%]'><About /></div>} />
+        <Route path='/contact' element={<div className='mx-4 sm:mx-[10%]'><Contact /></div>} />
+        <Route path='/my-profile' element={<div className='mx-4 sm:mx-[10%]'><MyProfile /></div>} />
+        <Route path='/my-appointments' element={<div className='mx-4 sm:mx-[10%]'><MyAppointment /></div>} />
+        <Route path='/appointment/:docId' element={<div className='mx-4 sm:mx-[10%]'><Appointment /></div>} />
+        <Route path='/privacy-policy' element={<div className='mx-4 sm:mx-[10%]'><PrivacyPolicy /></div>} />
+        <Route path='/terms' element={<div className='mx-4 sm:mx-[10%]'><Terms /></div>} />
       </Routes>
       <Footer />
     </div>
