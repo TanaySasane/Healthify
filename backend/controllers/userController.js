@@ -229,7 +229,7 @@ const listAppointment = async (req, res) => {
     }
 }
 
-const razorpayInstance = new razorpay({
+const getRazorpayInstance = () => new razorpay({
     key_id: process.env.RAZORPAY_KEY_ID,
     key_secret: process.env.RAZORPAY_KEY_SECRET
 })
@@ -253,7 +253,7 @@ const paymentRazorpay = async (req, res) => {
         }
 
         // creation of an order
-        const order = await razorpayInstance.orders.create(options)
+        const order = await getRazorpayInstance().orders.create(options)
 
         res.json({ success: true, order })
 
