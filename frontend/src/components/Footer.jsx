@@ -60,8 +60,16 @@ const Footer = () => {
           <div>
             <p className="text-white font-semibold mb-5 text-sm uppercase tracking-wider">Services</p>
             <ul className="flex flex-col gap-3 text-sm">
-              {['Book Appointment', 'Find Specialists', 'Online Consultation', 'Health Records'].map(s => (
-                <li key={s} className="hover:text-primary transition-colors duration-200 cursor-pointer">{s}</li>
+              {[
+                ['Book Appointment', '/doctors'],
+                ['Find Specialists', '/doctors'],
+                ['My Appointments', '/my-appointments'],
+                ['My Profile', '/my-profile'],
+              ].map(([label, path]) => (
+                <li key={label}>
+                  <span onClick={() => { navigate(path); scrollTo(0,0) }}
+                    className="cursor-pointer hover:text-primary transition-colors duration-200">{label}</span>
+                </li>
               ))}
             </ul>
           </div>
@@ -96,8 +104,8 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-gray-500">
           <p>© 2025 Healthify.in — All Rights Reserved. Built by <span className="text-primary font-medium">Tanay Sasane</span></p>
           <div className="flex gap-5">
-            <span className="hover:text-primary cursor-pointer transition-colors">Privacy Policy</span>
-            <span className="hover:text-primary cursor-pointer transition-colors">Terms of Service</span>
+            <span onClick={() => { navigate('/privacy-policy'); scrollTo(0,0) }} className="hover:text-primary cursor-pointer transition-colors">Privacy Policy</span>
+            <span onClick={() => { navigate('/terms'); scrollTo(0,0) }} className="hover:text-primary cursor-pointer transition-colors">Terms of Service</span>
             <span className="hover:text-primary cursor-pointer transition-colors">Cookie Policy</span>
           </div>
         </div>
