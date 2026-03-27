@@ -139,6 +139,12 @@ const seed = async () => {
       { cancelled: false, payment: true, isCompleted: true },
       { cancelled: false, payment: true, isCompleted: false },
       { cancelled: false, payment: false, isCompleted: false },
+      { cancelled: false, payment: true, isCompleted: true },
+      { cancelled: false, payment: true, isCompleted: false },
+      { cancelled: false, payment: false, isCompleted: false },
+      { cancelled: false, payment: true, isCompleted: true },
+      { cancelled: false, payment: false, isCompleted: false },
+      { cancelled: false, payment: true, isCompleted: false },
       { cancelled: true, payment: false, isCompleted: false },
     ]
 

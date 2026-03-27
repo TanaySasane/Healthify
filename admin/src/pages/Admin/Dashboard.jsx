@@ -54,7 +54,7 @@ const Dashboard = () => {
                 <p className='text-gray-800 font-medium'>{item.docData.name}</p>
                 <p className='text-gray-600 '>Booking on {slotDateFormat(item.slotDate)}</p>
               </div>
-              {item.cancelled ? <p className='text-red-400 text-xs font-medium'>Cancelled</p> : item.isCompleted ? <p className='text-green-500 text-xs font-medium'>Completed</p> : <img onClick={() => cancelAppointment(item._id)} className='w-10 cursor-pointer' src={assets.cancel_icon} alt="" />}
+              {item.cancelled ? <p className='text-red-400 text-xs font-medium'>Cancelled</p> : item.isCompleted ? <p className='text-green-500 text-xs font-medium'>Completed</p> : <button onClick={() => cancelAppointment(item._id)} className='text-xs text-red-500 border border-red-300 px-3 py-1 rounded-full hover:bg-red-500 hover:text-white transition-all'>Cancel</button>}
             </div>
           ))}
         </div>
