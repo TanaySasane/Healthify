@@ -8,7 +8,7 @@ import { assets } from '../assets/assets'
 const statusConfig = {
   completed: { label: 'Completed', cls: 'bg-green-50 text-green-600 border-green-200' },
   cancelled: { label: 'Cancelled', cls: 'bg-red-50 text-red-500 border-red-200' },
-  paid: { label: 'Paid · Upcoming', cls: 'bg-blue-50 text-blue-600 border-blue-200' },
+  paid: { label: 'Paid · Ongoing', cls: 'bg-blue-50 text-blue-600 border-blue-200' },
   ongoing: { label: 'Ongoing', cls: 'bg-yellow-50 text-yellow-600 border-yellow-200' },
   pending: { label: 'Pending Payment', cls: 'bg-orange-50 text-orange-500 border-orange-200' },
 }
@@ -96,7 +96,7 @@ const MyAppointments = () => {
   const cancelled = appointments.filter(a => a.cancelled)
 
   const tabs = [
-    { key: 'upcoming', label: 'Upcoming', count: upcoming.length },
+    { key: 'upcoming', label: 'Ongoing', count: upcoming.length },
     { key: 'completed', label: 'Completed', count: completed.length },
     { key: 'cancelled', label: 'Cancelled', count: cancelled.length },
   ]
@@ -127,7 +127,7 @@ const MyAppointments = () => {
       {displayed.length === 0 ? (
         <div className='text-center py-16 text-gray-400'>
           <svg className='w-12 h-12 mx-auto mb-3 opacity-40' viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-          <p className='text-lg font-medium'>No {activeTab} appointments</p>
+          <p className='text-lg font-medium'>No {activeTab === 'upcoming' ? 'ongoing' : activeTab} appointments</p>
         </div>
       ) : (
         <div className='flex flex-col gap-4'>
