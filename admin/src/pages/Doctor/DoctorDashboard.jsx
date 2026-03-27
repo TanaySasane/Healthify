@@ -18,7 +18,7 @@ const StatCard = ({ icon, value, label, color }) => (
 
 const DoctorDashboard = () => {
   const { dToken, dashData, getDashData, cancelAppointment, completeAppointment } = useContext(DoctorContext)
-  const { slotDateFormat, currency } = useContext(AppContext)
+  const { slotDateFormat } = useContext(AppContext)
 
   useEffect(() => { if (dToken) getDashData() }, [dToken])
 
@@ -30,7 +30,7 @@ const DoctorDashboard = () => {
 
       {/* Stats */}
       <div className='grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8'>
-        <StatCard icon="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" value={`${currency}${dashData.earnings}`} label="Total Earnings" color="bg-green-500"/>
+        <StatCard icon="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" value={`₹${dashData.earnings}`} label="Total Earnings" color="bg-green-500"/>
         <StatCard icon="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" value={dashData.appointments} label="Appointments" color="bg-primary"/>
         <StatCard icon="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2 M9 7a4 4 0 100 8 4 4 0 000-8z" value={dashData.patients} label="Patients" color="bg-purple-500"/>
       </div>
