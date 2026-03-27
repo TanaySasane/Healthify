@@ -53,6 +53,11 @@ const doctors = [
   { name: 'Dr. Deepa Kulkarni', email: 'deepa.kulkarni@healthify.in', speciality: 'Gynecologist', degree: 'MBBS, MS, DNB', experience: '14 Years', fees: 900, image: femaleAvatars[0], address: { line1: 'Sadashiv Peth, WomensHealth Clinic', line2: 'Pune, Maharashtra 411030' }, about: 'Dr. Deepa Kulkarni is a senior gynecologist with 14 years of experience in obstetrics and reproductive medicine.' },
   { name: 'Dr. Sanjay Gaikwad', email: 'sanjay.gaikwad@healthify.in', speciality: 'Gastroenterologist', degree: 'MBBS, MD, DM', experience: '10 Years', fees: 780, image: maleAvatars[0], address: { line1: 'Bibwewadi, GutHealth Centre', line2: 'Pune, Maharashtra 411037' }, about: 'Dr. Sanjay Gaikwad is a skilled gastroenterologist with expertise in colonoscopy and hepatology.' },
   { name: 'Dr. Ritu Sharma', email: 'ritu.sharma@healthify.in', speciality: 'Pediatricians', degree: 'MBBS, MD (Pediatrics)', experience: '6 Years', fees: 520, image: femaleAvatars[1], address: { line1: 'Katraj, BabyFirst Clinic', line2: 'Pune, Maharashtra 411046' }, about: 'Dr. Ritu Sharma is a dedicated pediatrician passionate about child nutrition and developmental milestones.' },
+  { name: 'Dr. Kiran Joshi', email: 'kiran.joshi@healthify.in', speciality: 'General physician', degree: 'MBBS, MD', experience: '6 Years', fees: 480, image: maleAvatars[1], address: { line1: 'Pimple Saudagar, HealthFirst', line2: 'Pune, Maharashtra 411027' }, about: 'Dr. Kiran Joshi is a trusted general physician known for his patient-friendly approach and thorough diagnosis.' },
+  { name: 'Dr. Swati Bhatt', email: 'swati.bhatt@healthify.in', speciality: 'Gynecologist', degree: 'MBBS, MS (OBG)', experience: '5 Years', fees: 650, image: femaleAvatars[2], address: { line1: 'Warje, MothersTouch Clinic', line2: 'Pune, Maharashtra 411058' }, about: 'Dr. Swati Bhatt is a compassionate gynecologist focused on maternal health and safe deliveries.' },
+  { name: 'Dr. Prasad Kulkarni', email: 'prasad.kulkarni@healthify.in', speciality: 'Gastroenterologist', degree: 'MBBS, DM', experience: '8 Years', fees: 720, image: maleAvatars[2], address: { line1: 'Kharadi, GutCare Centre', line2: 'Pune, Maharashtra 411014' }, about: 'Dr. Prasad Kulkarni specializes in liver disorders, IBS, and advanced endoscopic procedures.' },
+  { name: 'Dr. Nandini Deshmukh', email: 'nandini.deshmukh@healthify.in', speciality: 'Neurologist', degree: 'MBBS, DM (Neurology)', experience: '9 Years', fees: 950, image: femaleAvatars[3], address: { line1: 'Erandwane, BrainCare Hospital', line2: 'Pune, Maharashtra 411004' }, about: 'Dr. Nandini Deshmukh is an expert in treating anxiety disorders, sleep disorders, and neuropathy.' },
+  { name: 'Dr. Tejas More', email: 'tejas.more@healthify.in', speciality: 'Dermatologist', degree: 'MBBS, MD (Dermatology)', experience: '5 Years', fees: 580, image: maleAvatars[3], address: { line1: 'Kondhwa, SkinFirst Clinic', line2: 'Pune, Maharashtra 411048' }, about: 'Dr. Tejas More specializes in acne treatment, vitiligo, and laser skin procedures.' },
 ]
 
 const users = [
@@ -71,6 +76,15 @@ const users = [
   { name: 'Aditya Gaikwad', email: 'aditya.gaikwad@gmail.com', phone: '8876543210', gender: 'Male', dob: '1991-10-05', address: { line1: 'Katraj, Sinhagad Road', line2: 'Pune 411046' } },
   { name: 'Meghna Rao', email: 'meghna.rao@gmail.com', phone: '8765432109', gender: 'Female', dob: '1999-07-28', address: { line1: 'Bibwewadi, Near Market', line2: 'Pune 411037' } },
   { name: 'Harsh Pawar', email: 'harsh.pawar@gmail.com', phone: '8654321098', gender: 'Male', dob: '1986-01-15', address: { line1: 'Hinjewadi IT Park Road', line2: 'Pune 411057' } },
+  { name: 'Gaurav Shinde', email: 'gaurav.shinde@gmail.com', phone: '8543210987', gender: 'Male', dob: '1993-08-11', address: { line1: 'Warje, Near Bridge', line2: 'Pune 411058' } },
+  { name: 'Pallavi Jain', email: 'pallavi.jain@gmail.com', phone: '8432109876', gender: 'Female', dob: '1997-05-23', address: { line1: 'Pimple Saudagar, Sector 7', line2: 'Pune 411027' } },
+  { name: 'Omkar Kulkarni', email: 'omkar.kulkarni@gmail.com', phone: '8321098765', gender: 'Male', dob: '1989-12-03', address: { line1: 'Kharadi, IT Hub Road', line2: 'Pune 411014' } },
+  { name: 'Sakshi Deshmukh', email: 'sakshi.deshmukh@gmail.com', phone: '8210987654', gender: 'Female', dob: '2001-02-28', address: { line1: 'Erandwane, FC Road', line2: 'Pune 411004' } },
+  { name: 'Yash Parab', email: 'yash.parab@gmail.com', phone: '8109876543', gender: 'Male', dob: '1995-09-14', address: { line1: 'Kondhwa, Main Road', line2: 'Pune 411048' } },
+  { name: 'Ishita Mehta', email: 'ishita.mehta@gmail.com', phone: '7998765432', gender: 'Female', dob: '1998-07-07', address: { line1: 'Bibwewadi, Lane 4', line2: 'Pune 411037' } },
+  { name: 'Nitin Sawant', email: 'nitin.sawant@gmail.com', phone: '7887654321', gender: 'Male', dob: '1984-04-19', address: { line1: 'Hadapsar, Magarpatta Road', line2: 'Pune 411028' } },
+  { name: 'Divya Nair', email: 'divya.nair@gmail.com', phone: '7776543210', gender: 'Female', dob: '1996-11-25', address: { line1: 'Viman Nagar, Clover Park', line2: 'Pune 411014' } },
+  { name: 'Akash Tiwari', email: 'akash.tiwari@gmail.com', phone: '7665432109', gender: 'Male', dob: '1990-06-30', address: { line1: 'Shivajinagar, Law College Road', line2: 'Pune 411005' } },
 ]
 
 const slotTimes = ['09:00 am', '09:30 am', '10:00 am', '10:30 am', '11:00 am', '11:30 am', '02:00 pm', '02:30 pm', '03:00 pm', '03:30 pm', '04:00 pm', '04:30 pm']

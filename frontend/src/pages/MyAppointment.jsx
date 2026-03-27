@@ -6,9 +6,7 @@ import { toast } from 'react-toastify'
 import { assets } from '../assets/assets'
 
 const MyAppointments = () => {
-  const { backendUrl, token, getDoctorsData } = useContext(AppContext)
-  const navigate = useNavigate()
-  const { doctors } = useContext(AppContext)
+  const { backendUrl, token, getDoctorsData, doctors = [] } = useContext(AppContext)
   const [appointments, setAppointments] = useState([])
   const [payment, setPayment] = useState('')
 

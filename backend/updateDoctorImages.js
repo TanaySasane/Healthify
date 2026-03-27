@@ -26,6 +26,11 @@ const doctorImages = {
   'Dr. Deepa Kulkarni':   'https://api.dicebear.com/7.x/lorelei/svg?seed=DeepaKulkarni&backgroundColor=ffd5dc&radius=50',
   'Dr. Sanjay Gaikwad':   'https://api.dicebear.com/7.x/lorelei/svg?seed=SanjayGaikwad&backgroundColor=d1f4d1&radius=50',
   'Dr. Ritu Sharma':      'https://api.dicebear.com/7.x/lorelei/svg?seed=RituSharma&backgroundColor=ffeaa7&radius=50',
+  'Dr. Kiran Joshi':      'https://api.dicebear.com/7.x/lorelei/svg?seed=KiranJoshi&backgroundColor=b6e3f4&radius=50',
+  'Dr. Swati Bhatt':      'https://api.dicebear.com/7.x/lorelei/svg?seed=SwatiBhatt&backgroundColor=ffd5dc&radius=50',
+  'Dr. Prasad Kulkarni':  'https://api.dicebear.com/7.x/lorelei/svg?seed=PrasadKulkarni&backgroundColor=d1f4d1&radius=50',
+  'Dr. Nandini Deshmukh': 'https://api.dicebear.com/7.x/lorelei/svg?seed=NandiniDeshmukh&backgroundColor=ffdfbf&radius=50',
+  'Dr. Tejas More':       'https://api.dicebear.com/7.x/lorelei/svg?seed=TejasMore&backgroundColor=c0aede&radius=50',
 }
 
 const update = async () => {
