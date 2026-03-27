@@ -154,4 +154,13 @@ const adminDashboard = async (req, res) => {
 }
 
 
-export {loginAdmin, addDoctor, allDoctors, appointmentsAdmin, appointmentCancel, adminDashboard}
+const allPatients = async (req, res) => {
+    try {
+        const patients = await userModel.find({}).select('-password')
+        res.json({ success: true, patients })
+    } catch (error) {
+        res.json({ success: false, message: error.message })
+    }
+}
+
+export {loginAdmin, addDoctor, allDoctors, appointmentsAdmin, appointmentCancel, adminDashboard, allPatients}
