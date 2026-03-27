@@ -40,7 +40,9 @@ const Navbar = () => {
           {aToken ? 'Admin' : 'Doctor'}
         </p>
         {isOnDashboard && (
-          <button onClick={() => window.location.href = 'https://healthify.vercel.app/'} className='text-white bg-primary hover:bg-gray-700 px-3 py-1.5 rounded-full text-xs'>
+          <button
+            onClick={() => window.open('http://localhost:5173', '_blank')}
+            className='text-white bg-primary hover:bg-gray-700 px-3 py-1.5 rounded-full text-xs'>
             User Panel
           </button>
         )}

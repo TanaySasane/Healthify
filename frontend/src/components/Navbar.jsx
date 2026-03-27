@@ -79,7 +79,7 @@ const Navbar = () => {
 
           {location.pathname === '/' && (
             <button
-              onClick={() => window.open('https://healthify.vercel.app', '_blank')}
+              onClick={() => window.open('http://localhost:5174', '_blank')}
               className='hidden md:flex items-center gap-1.5 text-xs font-medium px-4 py-2 rounded-full border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200'
             >
               <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
