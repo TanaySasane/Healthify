@@ -60,12 +60,12 @@ const DoctorDashboard = () => {
                 <p className='text-gray-600 '>Booking on {slotDateFormat(item.slotDate)}</p>
               </div>
               {item.cancelled
-                ? <p className='text-red-400 text-xs font-medium'>Cancelled</p>
+                ? <span className='text-xs font-medium px-3 py-1 rounded-full bg-red-50 text-red-500 border border-red-200'>Cancelled</span>
                 : item.isCompleted
-                  ? <p className='text-green-500 text-xs font-medium'>Completed</p>
-                  : <div className='flex'>
-                    <img onClick={() => cancelAppointment(item._id)} className='w-10 cursor-pointer' src={assets.cancel_icon} alt="" />
-                    <img onClick={() => completeAppointment(item._id)} className='w-10 cursor-pointer' src={assets.tick_icon} alt="" />
+                  ? <span className='text-xs font-medium px-3 py-1 rounded-full bg-green-50 text-green-600 border border-green-200'>Completed</span>
+                  : <div className='flex items-center gap-2'>
+                    <button onClick={() => completeAppointment(item._id)} className='text-xs text-green-600 border border-green-500 px-3 py-1 rounded-full hover:bg-green-500 hover:text-white transition-all duration-200'>Complete</button>
+                    <button onClick={() => cancelAppointment(item._id)} className='text-xs text-red-500 border border-red-400 px-3 py-1 rounded-full hover:bg-red-500 hover:text-white transition-all duration-200'>Cancel</button>
                   </div>
               }
             </div>

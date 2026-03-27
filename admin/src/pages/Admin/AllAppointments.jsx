@@ -43,9 +43,9 @@ const AllAppointments = () => {
             </div>
             <p>{currency}{item.amount}</p>
             {item.cancelled 
-              ? <p className='text-red-400 text-xs font-medium'>Cancelled</p>
+              ? <span className='text-xs font-medium px-3 py-1 rounded-full bg-red-50 text-red-500 border border-red-200'>Cancelled</span>
               : item.isCompleted 
-              ? <p className='text-green-500 text-xs font-medium'>Completed</p> 
+              ? <span className='text-xs font-medium px-3 py-1 rounded-full bg-green-50 text-green-600 border border-green-200'>Completed</span>
               : <button onClick={() => cancelAppointment(item._id)} className='text-xs text-red-500 border border-red-400 px-3 py-1 rounded-full hover:bg-red-500 hover:text-white transition-all duration-200'>Cancel</button>
             }
           </div>
