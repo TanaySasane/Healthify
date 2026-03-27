@@ -74,7 +74,7 @@ const Footer = () => {
                 <span className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center flex-shrink-0">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
                 </span>
-                +91-90000-90000
+                +91-93227-74275
               </li>
               <li className="flex items-center gap-3">
                 <span className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center flex-shrink-0">
@@ -86,7 +86,7 @@ const Footer = () => {
                 <span className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center flex-shrink-0">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
                 </span>
-                Suite 350, Washington, USA
+                Kothrud, Pune, Maharashtra 411004
               </li>
             </ul>
           </div>
@@ -94,7 +94,7 @@ const Footer = () => {
 
         {/* Bottom bar */}
         <div className="border-t border-gray-800 pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-gray-500">
-          <p>© 2025 Healthify.in — All Rights Reserved.</p>
+          <p>© 2025 Healthify.in — All Rights Reserved. Built by <span className="text-primary font-medium">Tanay Sasane</span></p>
           <div className="flex gap-5">
             <span className="hover:text-primary cursor-pointer transition-colors">Privacy Policy</span>
             <span className="hover:text-primary cursor-pointer transition-colors">Terms of Service</span>
