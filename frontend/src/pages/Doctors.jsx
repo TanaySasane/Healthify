@@ -9,9 +9,10 @@ const Doctors = () => {
   const [showFilter, setShowFilter] = useState(false)
   const [search, setSearch] = useState('')
   const navigate = useNavigate()
-  const { doctors } = useContext(AppContext)
+  const { doctors = [] } = useContext(AppContext)
 
   useEffect(() => {
+    if (!doctors) return
     let filtered = speciality ? doctors.filter(d => d.speciality === speciality) : doctors
     if (search) filtered = filtered.filter(d =>
       d.name.toLowerCase().includes(search.toLowerCase()) ||

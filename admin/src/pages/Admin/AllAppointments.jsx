@@ -42,9 +42,12 @@ const AllAppointments = () => {
               <img src={item.docData.image} className='w-8 rounded-full bg-gray-200' alt="" /> <p>{item.docData.name}</p>
             </div>
             <p>{currency}{item.amount}</p>
-            {item.cancelled ? <p className='text-red-400 text-xs font-medium'>Cancelled</p>
-              : item.isCompleted ? <p className='text-green-500 text-xs font-medium'>Completed</p> :
-                <img onClick={() => cancelAppointment(item._id)} className='w-10 cursor-pointer' src={assets.cancel_icon} alt="" />}
+            {item.cancelled 
+              ? <p className='text-red-400 text-xs font-medium'>Cancelled</p>
+              : item.isCompleted 
+              ? <p className='text-green-500 text-xs font-medium'>Completed</p> 
+              : <button onClick={() => cancelAppointment(item._id)} className='text-xs text-red-500 border border-red-400 px-3 py-1 rounded-full hover:bg-red-500 hover:text-white transition-all duration-200'>Cancel</button>
+            }
           </div>
         ))}
       </div>

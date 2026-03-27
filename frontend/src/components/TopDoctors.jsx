@@ -4,7 +4,7 @@ import { AppContext } from '../context/AppContext'
 
 const TopDoctors = () => {
   const navigate = useNavigate()
-  const { doctors } = useContext(AppContext)
+  const { doctors = [] } = useContext(AppContext)
 
   return (
     <div className='py-16 px-4 bg-gray-50'>
