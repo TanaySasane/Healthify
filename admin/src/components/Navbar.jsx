@@ -41,7 +41,7 @@ const Navbar = () => {
         </p>
         {isOnDashboard && (
           <button
-            onClick={() => window.open('https://healthify-4adnx0g89-tanaysasanes-projects.vercel.app', '_blank')}
+            onClick={() => window.open('https://healthify-rosy-ten.vercel.app', '_blank')}
             className='text-white bg-primary hover:bg-gray-700 px-3 py-1.5 rounded-full text-xs'>
             User Panel
           </button>

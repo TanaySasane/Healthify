@@ -2,7 +2,13 @@
 
 **Healthify** is a full-stack web application designed to make healthcare more accessible by simplifying the process of booking doctor appointments. It offers three levels of login: **Patient**, **Doctor**, and **Admin**, each with distinct features tailored to their roles. The app integrates **online payment gateway (Razorpay)** to facilitate seamless and secure payments. Built using the **MERN stack** (MongoDB, Express.js, React.js, and Node.js), Healthify provides an efficient, user-friendly experience for both patients and healthcare providers.
 
-## 🛠️ Tech Stack
+## 🌍 Live Demo
+
+- **Frontend**: https://healthify-rosy-ten.vercel.app
+- **Admin Panel**: https://healthify-a.vercel.app
+- **Backend API**: https://healthify-backend-gaf1.onrender.com
+
+
 
 - **Frontend**: React.js + Tailwind CSS
 - **Backend**: Node.js, Express.js
