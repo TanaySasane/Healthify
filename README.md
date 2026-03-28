@@ -119,6 +119,6 @@ Healthify/
 
 Feel free to fork, open issues, and submit pull requests.
 
-## 👨‍💻 Built By
+## 👨‍💻 Developer
 
 **Tanay Sasane** — [GitHub](https://github.com/TanaySasane)
